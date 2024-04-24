@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "tlc592x")(type "KiCad")(uri "${KIPRJMOD}/tlc592x.kicad_sym")(options "")(descr ""))
+  (lib (name "rpm71xx")(type "KiCad")(uri "${KIPRJMOD}/rpm71xx.kicad_sym")(options "")(descr ""))
+)
