@@ -9,15 +9,15 @@
 		(rev "1")
 	)
 	(lib_symbols
-		(symbol "Conn_01x08_Pin_1"
+		(symbol "Conn_01x08_Pin_3"
 			(pin_names
 				(offset 2)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J9"
-				(at -1.27 0.0001 0)
+			(property "Reference" "J2"
+				(at 5.08 10.922 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -25,8 +25,8 @@
 					(justify right)
 				)
 			)
-			(property "Value" "Conn_01x08_Pin"
-				(at -1.27 -2.5399 0)
+			(property "Value" "Hour_Tens"
+				(at 2.032 10.922 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -79,7 +79,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x08_Pin_1_1_1"
+			(symbol "Conn_01x08_Pin_3_1_1"
 				(polyline
 					(pts
 						(xy 1.27 -10.16) (xy 0.8636 -10.16)
@@ -267,7 +267,7 @@
 				(pin passive line
 					(at 5.08 7.62 180)
 					(length 3.81)
-					(name "Seg_A"
+					(name "Seg_G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -285,7 +285,7 @@
 				(pin passive line
 					(at 5.08 5.08 180)
 					(length 3.81)
-					(name "Seg_B"
+					(name "Seg_F"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -303,7 +303,7 @@
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 3.81)
-					(name "Seg_C"
+					(name "Seg_E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -339,7 +339,7 @@
 				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 3.81)
-					(name "Seg_E"
+					(name "Seg_C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -356,335 +356,6 @@
 				)
 				(pin passive line
 					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Seg_F"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 180)
-					(length 3.81)
-					(name "Seg_G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -10.16 180)
-					(length 3.81)
-					(name "Anode"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Conn_01x08_Pin_2"
-			(pin_names
-				(offset 2)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J5"
-				(at 5.08 10.922 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Minute_Tens"
-				(at 2.032 10.922 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at -10.414 -8.128 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x08, script generated"
-				(at -0.254 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x08_Pin_2_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -10.16) (xy 0.8636 -10.16)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -7.62) (xy 0.8636 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 7.62) (xy 0.8636 7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0 0.127)
-					(end 0.8636 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -10.033)
-					(end 0 -10.287)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 7.747)
-					(end 0 7.493)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at 5.08 7.62 180)
-					(length 3.81)
-					(name "Seg_A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
 					(length 3.81)
 					(name "Seg_B"
 						(effects
@@ -693,78 +364,6 @@
 							)
 						)
 					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Seg_C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Seg_D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Seg_E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Seg_F"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
 					(number "6"
 						(effects
 							(font
@@ -776,7 +375,7 @@
 				(pin passive line
 					(at 5.08 -7.62 180)
 					(length 3.81)
-					(name "Seg_G"
+					(name "Seg_A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9008,95 +8607,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x08_Pin_2")
-		(lib_id "Connector:Conn_01x08_Pin")
-		(at 157.48 39.37 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b9632d2-e68b-4784-9057-8f2f5d9fc9f7")
-		(property "Reference" "J4"
-			(at 152.4 28.448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Minute_Tens"
-			(at 155.448 28.448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 167.894 47.498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 157.734 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "93e09c3f-a09a-41ff-9255-7090a36834ec")
-		)
-		(pin "4"
-			(uuid "2f355822-6653-4af5-b9ce-4117c45f9245")
-		)
-		(pin "1"
-			(uuid "beb6c134-ab67-4cfc-9c15-d7a3c0ddfef0")
-		)
-		(pin "5"
-			(uuid "b514d4df-166f-4b43-95b5-f3e3c86047c7")
-		)
-		(pin "3"
-			(uuid "a976a963-3ec7-48d4-aad9-7e39eb91d828")
-		)
-		(pin "7"
-			(uuid "575fb6e4-8b66-43dd-8132-819a17a6e914")
-		)
-		(pin "8"
-			(uuid "5236a2d6-7835-4329-be2c-69ce18293f3a")
-		)
-		(pin "6"
-			(uuid "fa76b64e-fd9b-4f46-9f09-eabee0741737")
-		)
-		(instances
-			(project "BigTimeClock"
-				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 203.2 85.09 0)
 		(unit 1)
@@ -9158,6 +8668,95 @@
 			(project "BigTimeClock"
 				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x08_Pin_3")
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 240.03 39.37 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c6eb4dd-93fc-41d1-ac0b-2af3257f80b7")
+		(property "Reference" "J6"
+			(at 234.95 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Second_Tens"
+			(at 237.998 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 240.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "afbfb0f6-cf3e-4b8b-a108-bdad52eb715d")
+		)
+		(pin "4"
+			(uuid "2e090ecc-250c-49a7-8575-598b55490c61")
+		)
+		(pin "1"
+			(uuid "bc185b12-4333-45ad-83ad-2f25b3a41586")
+		)
+		(pin "5"
+			(uuid "7dbca982-9495-45a0-87e3-bde22b96cc4d")
+		)
+		(pin "3"
+			(uuid "43c711d9-e427-4154-b000-2a73d4cc5f06")
+		)
+		(pin "7"
+			(uuid "071c2f9c-983d-40b4-ba78-b3521bc261ab")
+		)
+		(pin "8"
+			(uuid "ce987a53-9e33-4f0a-a2f2-24d662cdd770")
+		)
+		(pin "6"
+			(uuid "626f174b-a974-460b-b24e-df9af9ce8900")
+		)
+		(instances
+			(project "BigTimeClock"
+				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -9780,7 +9379,7 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x08_Pin_1")
+		(lib_name "Conn_01x08_Pin_3")
 		(lib_id "Connector:Conn_01x08_Pin")
 		(at 83.82 39.37 0)
 		(mirror y)
@@ -10545,95 +10144,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x08_Pin_1")
-		(lib_id "Connector:Conn_01x08_Pin")
-		(at 240.03 67.31 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "55c902b9-ba84-4538-b510-c0d1edf8f84f")
-		(property "Reference" "J7"
-			(at 234.95 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Second_Ones"
-			(at 237.998 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.03 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 240.03 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 240.03 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "37203d93-1997-45b8-9183-4813916a3f8a")
-		)
-		(pin "4"
-			(uuid "dc19f01a-b865-4bb5-ad7b-0785d2a0def3")
-		)
-		(pin "1"
-			(uuid "6472738a-e81e-4e63-b0df-f715f6b0c1a5")
-		)
-		(pin "5"
-			(uuid "1dfed9d2-3743-449b-9834-52a52fae628a")
-		)
-		(pin "3"
-			(uuid "f53253c1-c648-4a50-83df-a83feb322a05")
-		)
-		(pin "7"
-			(uuid "c73264f0-2476-4cb3-a0f7-0240cfe0f92b")
-		)
-		(pin "8"
-			(uuid "ceb00f4f-ef76-443a-b58c-40470427413b")
-		)
-		(pin "6"
-			(uuid "3467656e-6288-476f-a013-429e49883558")
-		)
-		(instances
-			(project "BigTimeClock"
-				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 201.93 109.22 0)
 		(unit 1)
@@ -10760,6 +10270,95 @@
 			(project "BigTimeClock"
 				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
 					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x08_Pin_3")
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 157.48 39.37 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64e0f2f3-5ad8-4a56-bd20-fb46ee09514e")
+		(property "Reference" "J4"
+			(at 152.4 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Minute_Tens"
+			(at 155.448 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 157.48 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "261eb9e9-1c6b-496b-852c-4365bacb99e1")
+		)
+		(pin "4"
+			(uuid "8644d747-8126-4741-b270-0ed2dcbfb490")
+		)
+		(pin "1"
+			(uuid "741482e5-9752-4ea0-8bf5-1f3d22d9ae61")
+		)
+		(pin "5"
+			(uuid "178b2eb8-6fe4-43c7-9f81-12a61fc8f1fe")
+		)
+		(pin "3"
+			(uuid "d2c62567-087f-48f1-8a83-349a20d58b7d")
+		)
+		(pin "7"
+			(uuid "12a988fd-1b44-4132-8bd9-72fc4bd8c7fe")
+		)
+		(pin "8"
+			(uuid "19228461-3271-43e5-9a6f-f93376fa3ac0")
+		)
+		(pin "6"
+			(uuid "cfa3cc98-f18a-4f5b-aed9-d04a40e1732e")
+		)
+		(instances
+			(project "BigTimeClock"
+				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -12890,6 +12489,95 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x08_Pin_3")
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 157.48 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b715d4d0-09d1-40b8-b630-2d77d3d70623")
+		(property "Reference" "J5"
+			(at 152.4 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Minute_Ones"
+			(at 155.448 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 157.48 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "497f41bb-afb8-4ee2-a8cb-6c75af594f21")
+		)
+		(pin "4"
+			(uuid "4d66145a-68c2-41a2-87f8-41f55205d18e")
+		)
+		(pin "1"
+			(uuid "875f1259-bf2f-4b74-9be0-9a53824d875f")
+		)
+		(pin "5"
+			(uuid "3947af56-c9b6-4ea7-8e61-0f78678117c9")
+		)
+		(pin "3"
+			(uuid "9f4f0bb5-0bf9-42cb-93d2-86f4c74cdfbb")
+		)
+		(pin "7"
+			(uuid "aba991cc-d4d4-4a9a-a99b-9ba36fb725f7")
+		)
+		(pin "8"
+			(uuid "163b7957-fd8f-4250-ab6d-95580351602b")
+		)
+		(pin "6"
+			(uuid "d9797b77-c99b-482c-8b8f-3ebd90b8028a")
+		)
+		(instances
+			(project "BigTimeClock"
+				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 137.16 130.81 0)
 		(unit 1)
@@ -13158,95 +12846,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x08_Pin_1")
-		(lib_id "Connector:Conn_01x08_Pin")
-		(at 240.03 39.37 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c013f2d9-a228-4a7d-adf0-1ccb544997c2")
-		(property "Reference" "J6"
-			(at 234.95 28.448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Second_Tens"
-			(at 237.998 28.448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.03 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 240.03 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 240.03 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "70ba2f15-89e6-4ad1-957c-735628bd7b75")
-		)
-		(pin "4"
-			(uuid "784a97a0-3175-4bdb-8dd8-3998975550ea")
-		)
-		(pin "1"
-			(uuid "a69f09d8-7869-4728-8371-097cb0849392")
-		)
-		(pin "5"
-			(uuid "94be5e78-981c-4633-9f5f-3013e23281a7")
-		)
-		(pin "3"
-			(uuid "f1129f10-7e96-4652-bf64-d5b17c94b416")
-		)
-		(pin "7"
-			(uuid "d9b01be4-c7ba-4ef9-8d95-2f9844ad55e3")
-		)
-		(pin "8"
-			(uuid "6f85ece1-7820-464d-a9a4-2c89f8945f3a")
-		)
-		(pin "6"
-			(uuid "c88b9f6a-3928-438b-8ccf-dfecac59af54")
-		)
-		(instances
-			(project "BigTimeClock"
-				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 27.94 152.4 0)
 		(unit 1)
@@ -13307,95 +12906,6 @@
 			(project "BigTimeClock"
 				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Conn_01x08_Pin_1")
-		(lib_id "Connector:Conn_01x08_Pin")
-		(at 157.48 67.31 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c233cec0-53ad-4601-894b-aee8b8d943ab")
-		(property "Reference" "J5"
-			(at 152.654 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Minute_Ones"
-			(at 155.448 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 157.48 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0695ebcd-08e6-4b41-a2f2-4fcc1826d10f")
-		)
-		(pin "4"
-			(uuid "5ec824b4-6f0a-4c7e-9e6b-7a197677be3e")
-		)
-		(pin "1"
-			(uuid "a5ff62f0-f2fe-497e-9741-351b9ac0e19a")
-		)
-		(pin "5"
-			(uuid "78d4c6e5-24ae-4c3c-bf4f-f0d6f4d8e6b7")
-		)
-		(pin "3"
-			(uuid "ad9c6f91-0cf7-4156-a895-055e71f6847c")
-		)
-		(pin "7"
-			(uuid "4723d4a0-843a-48e7-b60d-0e2497c18868")
-		)
-		(pin "8"
-			(uuid "03d3bfc7-e49f-40e0-aed1-44b418f5d26f")
-		)
-		(pin "6"
-			(uuid "104fba3c-bb71-44e7-bf53-794f2e299bf2")
-		)
-		(instances
-			(project "BigTimeClock"
-				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -13601,6 +13111,95 @@
 			(project "BigTimeClock"
 				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x08_Pin_3")
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 83.82 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d10d6e17-e1bb-46c5-8e24-411c565847b6")
+		(property "Reference" "J3"
+			(at 78.74 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Hour_Ones"
+			(at 81.788 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 83.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "059c5f66-75c6-4d94-abd9-a419648b997c")
+		)
+		(pin "4"
+			(uuid "15067616-9a20-4b0a-ba7d-80d7f7c1b469")
+		)
+		(pin "1"
+			(uuid "23c6c816-67f2-457b-b1c8-80152c071027")
+		)
+		(pin "5"
+			(uuid "2db5def2-6f81-4b07-8cf2-61e6e431b78d")
+		)
+		(pin "3"
+			(uuid "a705a6bf-ed0e-4924-afdd-164926e0e701")
+		)
+		(pin "7"
+			(uuid "f10a1912-0e83-4670-82af-7fd19ed5a42d")
+		)
+		(pin "8"
+			(uuid "0a946d14-3888-4bbc-adb0-f1114ae20c47")
+		)
+		(pin "6"
+			(uuid "678dce6e-1b8c-4dc1-8a4a-f6971785ccea")
+		)
+		(instances
+			(project "BigTimeClock"
+				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -14012,95 +13611,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x08_Pin_1")
-		(lib_id "Connector:Conn_01x08_Pin")
-		(at 83.82 67.31 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e56be16b-3770-428f-a86f-14b400a4a2bd")
-		(property "Reference" "J3"
-			(at 78.994 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Hour_Ones"
-			(at 81.788 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 83.82 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1677bcd9-d996-49e9-97f5-d4870a67c823")
-		)
-		(pin "4"
-			(uuid "e2005edc-8685-4d35-b96d-a3e2f294cb79")
-		)
-		(pin "1"
-			(uuid "1b430abd-b4d6-4aa4-ba39-d47424bf32f0")
-		)
-		(pin "5"
-			(uuid "1b7b5740-c67c-41aa-bc5a-05ae5d0ca8c6")
-		)
-		(pin "3"
-			(uuid "35be327f-5940-4db5-a053-2c76cedd0efb")
-		)
-		(pin "7"
-			(uuid "97d01f8d-214f-409e-adb9-c196e849550e")
-		)
-		(pin "8"
-			(uuid "81ed7aaf-4a99-4bd4-9933-b45703daaff4")
-		)
-		(pin "6"
-			(uuid "8467c3f2-63e0-421e-9e92-575950cd5551")
-		)
-		(instances
-			(project "BigTimeClock"
-				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 27.94 124.46 0)
 		(unit 1)
@@ -14434,6 +13944,95 @@
 			(project "BigTimeClock"
 				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x08_Pin_3")
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 240.03 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f795b0b2-b830-40b4-841f-d224f2726784")
+		(property "Reference" "J7"
+			(at 234.95 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Second_Ones"
+			(at 237.998 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 240.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "33902a08-c792-4533-94b6-184104176e08")
+		)
+		(pin "4"
+			(uuid "ed4bae37-aeb2-4233-b2d9-6b8444a8b5e9")
+		)
+		(pin "1"
+			(uuid "51625669-396b-4920-8bb5-5e2bba99d682")
+		)
+		(pin "5"
+			(uuid "2a9dcdd3-69c6-4760-beb1-988cdcc9f16b")
+		)
+		(pin "3"
+			(uuid "c5418104-806a-4699-a9f5-b9fd5a8e612f")
+		)
+		(pin "7"
+			(uuid "342d2e69-bb34-4e39-9ed9-83477cfa9a31")
+		)
+		(pin "8"
+			(uuid "225f200e-030a-4456-90d6-f6d0d1a4400d")
+		)
+		(pin "6"
+			(uuid "8e583e33-d531-4ce3-b0b0-9a0854d252f3")
+		)
+		(instances
+			(project "BigTimeClock"
+				(path "/da1f81f2-add5-4c21-8e76-92bd4179c626"
+					(reference "J7")
 					(unit 1)
 				)
 			)
