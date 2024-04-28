@@ -40,9 +40,9 @@ void processIllumination();
 void readtime();
 
 const uint8_t illuminaton_size = 16;
-uint16_t illumination[illuminaton_size];
-uint16_t illumination_sum = 0;
-uint8_t illumination_pos = 0;
+volatile uint16_t illumination[illuminaton_size];
+volatile uint16_t illumination_sum = 0;
+volatile uint8_t illumination_pos = 0;
 
 volatile bool adcFlag;
 volatile uint16_t ADCresult;
