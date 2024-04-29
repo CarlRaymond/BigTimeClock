@@ -13,8 +13,8 @@
 #define IRMP_USE_COMPLETE_CALLBACK      1
 #include <irmp.hpp>
 
-const uint8_t LED1_PIN = 6;
-const uint8_t LED2_PIN = 7;
+const uint8_t PIN_LED1 = 6;
+const uint8_t PIN_LED2 = 7;
 
 // Data about received IR code
 IRMP_DATA irmp_data;
@@ -81,6 +81,7 @@ void blink(uint8_t n) {
         n--;
     }
 }
+
 
 void loop() {
     char c;
@@ -253,10 +254,12 @@ void handleReceivedIRData() {
 
 ISR( ADC_vect ) // ADC conversion complete 
 {
-  
+  static uint8_t counter = 0;
   ADCresult = ADC;          // Read the ADC
   processIllumination(ADCresult);
   adcFlag   = true;         // set flag  
   TIFR1     = ( 1<<OCF1B ); // clear Compare Match B Flag
   
+  digitalWrite(PIN_LED2, counter & 0x01);
+  counter++;
 } // ISR

@@ -1,5 +1,7 @@
 #include <Arduino.h>
 #include <SPI.h>
+#include <Wire.h>
+#include "ds3231.h"
 #include "segments.h" 
 
 const uint8_t PIN_LED2 = 6;
@@ -14,6 +16,7 @@ const uint8_t PIN_LIGHT = A0; // 14
 SPISettings settings = SPISettings(1000000, MSBFIRST, SPI_MODE2);
 void setup();
 void loop();
+void configureClock();
 void configureADC(uint8_t adcChan);
 void configureTimer1(uint16_t ticks);
 void configureIllumination();
@@ -44,8 +47,10 @@ void setup() {
 
     configureIllumination();
 
+
     // Use ADC channel 0, and set a 1 second interval for ADC conversions
     configureADC(0);
+    configureClock();
     configureTimer1(15625);
 }
 
@@ -71,9 +76,16 @@ void loop() {
 
     counter++;
     delay(250);
-    digitalWrite(PIN_LED1, counter & 0x01);
+   // digitalWrite(PIN_LED1, counter & 0x01);
 }
 
+void configureClock() {
+    // Set control register to 0
+    Wire.beginTransmission(DS3231_ADDRESS);
+    Wire.write(DS3231_CONTROL);
+    Wire.write(0);
+    Wire.endTransmission();
+}
 
 void configureADC(uint8_t adcChan) {
   
@@ -125,7 +137,9 @@ void processIllumination(uint16_t newVal) {
 
 // Invoked when ADC conversion complete
 ISR( ADC_vect ) { 
- 
+  static uint8_t ledCounter = 0;
+  digitalWrite(PIN_LED2, ledCounter & 0x01);
+  counter++;
   ADCresult = ADC;          // Read the ADC
   processIllumination(ADCresult);
   adcFlag   = true;         // set flag
