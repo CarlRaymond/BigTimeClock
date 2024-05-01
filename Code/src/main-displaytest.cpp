@@ -42,16 +42,16 @@ void setup() {
     digitalWrite(PIN_BLANK, LOW);
     pinMode(PIN_SS, OUTPUT);
     SPI.begin();
-
-    Serial.begin(112500);
+    Serial.begin(115200);
 
     configureIllumination();
 
-
     // Use ADC channel 0, and set a 1 second interval for ADC conversions
+    cli();
     configureADC(0);
     configureClock();
     configureTimer1(15625);
+    sei();
 }
 
 void loop() {
@@ -91,7 +91,7 @@ void configureADC(uint8_t adcChan) {
   
   cli(); 
   // enable adc, auto trigger, interrupt enable, prescale=128
-  ADCSRA = (( 1<<ADEN ) | ( 1<<ADATE ) | ( 1<<ADIE ) | ( 1<<ADPS2 ) | ( 1<<ADPS1 ) | ( 1<<ADPS0 )); 
+  ADCSRA = (( 1<<ADEN ) | ( 1<<ADSC ) | ( 1<<ADATE ) | ( 1<<ADIE ) | ( 1<<ADPS2 ) | ( 1<<ADPS1 ) | ( 1<<ADPS0 )); 
   // Timer/Counter 1 Compare Match B 
   ADCSRB = (( 1<<ADTS2 ) | ( 1<<ADTS0 ));
   // ref=AVcc + adc chan   
@@ -99,7 +99,7 @@ void configureADC(uint8_t adcChan) {
   sei();
 }
 
-void configureTimer1 (uint16_t ticks) {
+void configureTimer1(uint16_t ticks) {
   
   TCCR1A  = 0;
   TCCR1B  = 0;
@@ -136,10 +136,10 @@ void processIllumination(uint16_t newVal) {
 }
 
 // Invoked when ADC conversion complete
-ISR( ADC_vect ) { 
+ISR(ADC_vect) { 
   static uint8_t ledCounter = 0;
   digitalWrite(PIN_LED2, ledCounter & 0x01);
-  counter++;
+  ledCounter++;
   ADCresult = ADC;          // Read the ADC
   processIllumination(ADCresult);
   adcFlag   = true;         // set flag

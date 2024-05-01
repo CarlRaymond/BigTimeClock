@@ -1,4 +1,4 @@
-#include <Arduino.h>
+#include <stdint.h>
 
 // Seven-segment lookup table
 //      MSB                LSB
